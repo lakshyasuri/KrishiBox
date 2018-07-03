@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00914d</color>
+    <color name="colorPrimaryDark">#00763f</color>
+    <color name="colorAccent">#00914d</color>
+    <color name="LoginHeading">#00914d</color>
+    <color name="navigation_view_color">#F8F8F8</color>
+</resources>

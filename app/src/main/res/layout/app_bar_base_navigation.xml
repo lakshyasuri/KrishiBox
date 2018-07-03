@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BaseNavigationActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            android:id="@+id/fragment_weather_base_custom_toolbar"
+            app:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            android:theme="@style/Custom_app_bar_theme"
+            android:background="@color/LoginHeading"
+            >
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FIELD WEATHER"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/autour_one"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:shadowColor="@android:color/darker_gray"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:id="@+id/action_bar_text"
+                    />
+
+
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:id="@+id/custom_action_bar_button"
+                    android:background="@drawable/icons8menu48"
+
+                    />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_base_navigation" />
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+-->
+</android.support.design.widget.CoordinatorLayout>
